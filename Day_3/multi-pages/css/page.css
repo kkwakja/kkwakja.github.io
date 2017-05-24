@@ -1,0 +1,42 @@
+body{
+    margin-left:auto;
+    margin-right:auto;
+    width:1080px;
+    height: 100vh;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight:100;
+    font-family: "SPoqa Han Sans";
+}
+
+
+a{
+    color:#6bd0ff;
+    text-decoration:none;
+}
+
+.active-page{
+    padding-left: 5px;
+    /*border-left:두께(width), 색상(color), 형태(style);*/
+    border-left: 3px currentColor solid;
+}
+
+a:hover{
+    color:#3981e6;
+}
+
+#travel {
+    background: url("../images/travel_bg.jpg") no-repeat;
+    background-size: contain;
+}
+
+#spring {
+    background: url("../images/spring_bg.jpg") no-repeat;
+    background-size: contain;
+}
+
+#summer {
+    background: url("../images/summer_bg.jpg") no-repeat;
+    background-size: contain;
+}
