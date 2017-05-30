@@ -1,0 +1,77 @@
+/*가이드라인 화면에 보여준다.*/
+ html{
+     /* rem 단위의 기준 설정 값 : 왜 10px이냐면 계산이 용이하기때문*/
+     font-size:10px; 
+ }
+ 
+ body{
+     margin:0;
+     background: url("../asset/leading-pattern-21.png");
+     height:100vh;
+     /*본문 디자인(공통 속성 상속)*/
+     color:#262626;
+     font:400 1.4rem/1.5 'Nanum Barun Gothic';
+ }
+
+/*단락디자인*/
+p{
+   margin-top: 0;
+   margin-bottom: 2.1rem; 
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    margin-bottom: 2.1rem;
+    color: #404040;
+}
+
+h2,h3 {
+    font-weight: 300;
+}
+
+h4,h5 {
+    font-weight: 400;
+}
+
+h1{
+    font-size: 5.0890rem; /*4.1041em x 1.24*/
+    line-height: 6.3rem; /* 3칸 * 2.1rem*/
+    font-weight: 200;
+}
+
+h2{
+    font-size: 4.1041rem; /*3.3098rem x 1.24*/
+    line-height: 4.2rem; /* 2칸 * 2.1rem*/
+   
+
+h3{
+    font-size: 3.3098rem; /*2.6692em x 1.24*/
+    line-height: 4.2rem; /* 2칸 * 2.1rem*/
+    
+
+h4{
+    font-size: 2.6692rem; /*2.1526rem x 1.24*/
+    line-height: 4.2rem; /* 2칸 * 2.1rem*/
+
+}
+
+h5{
+    font-size: 2.1526rem; /*1.736rem x 1.24*/
+    line-height: 2.1rem; /* 1칸 x 2.1rem*/
+    
+}
+
+h6{
+    /*본문 글자 크기 x 글자 크기 배율*/
+    font-size: 1.736rem; /*1.4rem x 1.24*/
+    line-height: 2.1rem;
+    font-weight: 700;
+
+
+}
+
+ .container{
+     width:640px;
+     margin-left: auto;
+     margin-right: auto;
+ }
