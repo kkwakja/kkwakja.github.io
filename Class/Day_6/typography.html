@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>본문/제목 디자인 &1t; 웹 타이포그래피 + 버티컬 리듬</title>
+    <title>본문/제목 디자인 &lt; 웹 타이포그래피 + 버티컬 리듬</title>
     <link href="https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/typography_gridlover.css">
+    <link rel="stylesheet" href="./css/typography.css">
 </head>
-<body>
+<body class="grid">
   
     <div class="container">
      <h1>반짝반짝 빛나는</h1>
@@ -16,7 +16,7 @@
      <h3>반짝반짝 빛나는</h3>
      <h4>반짝반짝 빛나는</h4>
      <h5>반짝반짝 빛나는</h5>
-     <!--<h6>반짝반짝 빛나는</h6>-->
+     <h6>반짝반짝 빛나는</h6>
 
     <p>요시모토 바나나, 야마다 에이미와 함께 일본의 3대 여류작가로 불리는 에쿠니 가오리의 소설 『반짝반짝 빛나는』. 제2회 무라사키시키부 문학상을 수상한 작품이다. 
        호모 남편과 알코올 중독 부인, 그리고 남편의 애인. 평범하지 않은 세 사람의 사랑 이야기가 펼쳐진다. 열흘 전에 결혼한 쇼코와 무츠키. 
@@ -26,5 +26,37 @@
        그러한 어긋남으로 인해 숱한 감정의 분화와 진화를 겪게 되는데… </p>
     </div>
 
+    <div class="container">
+        <!--비순차 목록
+            <ul> unodrdered list
+                <li> list item 
+                    <a href> hyperlink-->
+        <ul class="list is-horizontal">
+            <li><a href="">메일</a></li>
+            <li><a href="">카페</a></li>
+            <li><a href="">블로그</a></li>
+            <li><a href="">지식in</a></li>
+            <li><a href="">쇼핑</a></li>
+            <li><a href="">pay</a></li>
+        </ul>
+
+        <!--순차 목록
+            <ol> odrdered list
+                    <li> list item
+                        <a href> hyperlink-->
+        <ol class="list">
+            <li><a href="">탑</a></li>
+            <li><a href="">2017 6월 모의고사 등급컷</a></li>
+            <li><a href="">탑 대마초</a></li>
+            <li><a href="">6월 모의고사</a></li>
+            <li><a href="">2017 6월 모의고사 등급컷</a></li>
+        </ol>
+    </div>
+
+
+<script src="./js/toggleGrid.js"></script>
+<script>
+    toggleGrid();
+</script>
 </body>
 </html>

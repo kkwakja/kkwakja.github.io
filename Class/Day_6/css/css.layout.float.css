@@ -1,0 +1,42 @@
+body{
+    margin:4rem;
+}
+
+.box {
+    /*float: left;*/
+   
+    width: 200px;
+    height:200px;
+    font: 700 1.45rem Verdana;
+    color: black;
+}
+
+.is-float {
+    float: left;
+    margin-right: 2rem;
+}
+
+.is-clear {
+    clear:both;
+}
+
+.is-central {
+    text-align: center;
+    line-height: 200px;
+}
+/*text를 박스 높이 중간으로 맞추려면 라인 높이값을 박스와 동일한 값으로 줘야지만 박스의 중간으로 배치할수있음*/
+
+.primary {
+    background: #fa2645;
+}
+.secondary {
+    /*float:left;*/
+    background: #fc8b9c;
+}
+
+.tertiary {
+    background: #ad3d4e;
+}
+.quaternary {
+    background: #4e4e4e;
+}

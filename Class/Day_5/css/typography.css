@@ -1,12 +1,15 @@
 /*가이드라인 화면에 보여준다.*/
  body{
      margin:0;
-     background: url("../asset/leading-pattern-21.png");
-     height:100vh;
      /*본문 디자인(공통 속성 상속)*/
      color:#262626;
      font:400 87.5%/1.5 'Nanum Barun Gothic';
  }
+
+body.grid {
+     background: url("../asset/leading-pattern-21.png");
+     height:100vh;
+}
 
 p{
    margin-top: 0;
