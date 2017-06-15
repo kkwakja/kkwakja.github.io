@@ -1,0 +1,41 @@
+body {
+    margin: 30px;
+}
+
+.box-parent {
+    /*position: relative;*/
+    position: fixed;
+    border:1px solid #aaa;
+}
+
+.box-child {
+    width: 200px;
+    height: 110px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 110px;
+    font-size: 20px;
+    background: #111;
+    color: #fff;
+    position: relative;
+}
+
+.box-child:last-child {
+    margin-bottom: 0;
+}
+
+.is-1st {
+    /*자신의 원래 위치에 상대적으로 이동한다. 둘다 ++ 값일때는 원래 박스위치에서 안쪽으로 이동함*/
+    /*position: absolute;*/
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: #3ab982;
+    }
+.is-2nd {
+    background: #e5be9b;
+    }
+
+.is-3rd {
+    background: #fd414b;
+    }
