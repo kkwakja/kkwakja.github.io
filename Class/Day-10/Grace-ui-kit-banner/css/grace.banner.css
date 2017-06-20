@@ -36,6 +36,9 @@
 }
 
 .banner-category {
+    position: absolute;
+    top: 97px;
+    left: 21px;
     font-size: 12px;
     letter-spacing: 0.6px;
     /*대문자로 변형해줌*/
@@ -43,6 +46,9 @@
 }
 
 .banner-headline {
+    position: absolute;
+    top: -8px;
+    right: 60px;
     color: #dba68f;
     font-size:36px;
     line-height: 1.1111;
@@ -52,21 +58,28 @@
 /*위치*/
 }
 .banner-review * {
+    position: absolute;
+    bottom: 13px;
     font-size: 13px;
     padding-left: 24px;
 }
 /*개별 디자인*/
 .banner-review .review-view {
+    right: 137px;
     margin-right: 20px;
     background: url("../image/icon-view.svg") no-repeat 0 50%;
 }
 .banner-review .review-comments {
+    right: 98px;
     background: url("../image/icon-comments.svg") no-repeat 0 50%;
 }
 
 .banner-review-link {
-    display: none;
-    padding:1em 1.5em 1.0714em;
+    position: absolute;
+    bottom: 52px;
+    right: 46px;
+    /*display: none;*/
+    padding:0.75em 1.5em;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.7px;
