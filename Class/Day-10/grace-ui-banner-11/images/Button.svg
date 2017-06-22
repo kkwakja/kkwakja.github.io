@@ -1,0 +1,15 @@
+<svg id="Button_copy" data-name="Button copy" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f2f3f5;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse" class="cls-1" cx="32" cy="32" r="32"/>
+  <path id="Arrow" class="cls-2" d="M381.714,339.714a0.785,0.785,0,0,1-.127.089l-8.911,8.911a0.983,0.983,0,0,1-1.39-1.39L378.61,340H352a1,1,0,0,1,0-2h26.609l-7.323-7.324a0.983,0.983,0,0,1,1.39-1.391l8.925,8.925a0.859,0.859,0,0,1,.113.076A1.037,1.037,0,0,1,381.714,339.714Z" transform="translate(-337 -307)"/>
+</svg>
