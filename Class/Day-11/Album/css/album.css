@@ -1,0 +1,68 @@
+html {
+    background: #fff;
+}
+
+body {
+    margin: 0;
+}
+
+.vignette {
+    position: fixed;
+    /*width: 100vw;*/
+    /*height: 100vh;*/
+    top: 0; 
+    right: 0; 
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(circle,#7b7b7b,#313131);
+}
+
+.album {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 287px;
+    height: 287px;
+    transform: translate(-50%,-50%); 
+}
+
+.album-item {
+    position: absolute;
+}
+
+.album-item.cover {
+    z-index: 100;
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px rgba(0,0,0, 0.45);
+    /*box-shadow: 
+       * -2px -5px 10px rgba(0,0,255, 0.45),
+       * 2px 5px 10px rgba(255,0,0, 0.45),
+       * 0px 0px 10px rgba(0,255,0, 0.45);
+       * 멀티 쉐도우도 가능함*/
+}
+
+.album-item.sleeve {
+    z-index: 10;
+}
+
+/*앨범에 사용자가 마우스를 올린 상태
+ * mouse over
+ * mouse enter*/
+
+.album .album-item {
+    top: 0;
+    right: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.album:hover .album-item.sleeve {
+    top: -5px;
+    right: -25px;
+}
+
+.album:hover .album-item.disk {
+    top: -5px;
+    right: -80px;
+    transform: rotate(360deg);
+}
+
