@@ -1,0 +1,71 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font: 1.4rem/1.5 Dosis, Sans-Serief;
+    background: #fff;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+/*purple:#7d51ff
+lightgray: #a3a4bd
+done:#454553
+*/
+
+.done-page{
+    text-align: center;
+    padding-left: 13.3333%;
+    padding-right: 13.3333%;
+}
+
+.link {
+    display: block;
+    padding: 1em 0;
+    font-size: 1.6rem;
+}
+
+.is-order {
+    margin-bottom: 3.2rem;
+    line-height: 1;
+    font-weight: 500;
+    color:#a3a4bd;
+}
+
+.is-shop {
+    letter-spacing: 1.9px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    color:#7d51ff;
+}
+.icon {
+    /*position: absolute;*/
+}
+
+.is-done {
+    margin-top: 7.6rem;
+    margin-bottom: 8.5rem;
+}
+
+.title {
+    font-weight: 200;
+    font-size: 5rem;
+    line-height: 1.2;
+    color: #7d51ff;
+    margin-bottom: 7.7rem;
+}
+
+.sub-title {
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    /*포토샵에서 시안작업을 두배로 했기때문에 기존 폰트사이즈에서 /2 해줘야함*/
+    letter-spacing: 0.059em;
+    text-transform: uppercase;
+    color:#454553;
+}

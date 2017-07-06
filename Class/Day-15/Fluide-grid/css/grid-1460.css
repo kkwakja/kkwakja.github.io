@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+}
+
+body.grid {
+    position: relative;
+}
+
+body.grid::before,
+body.grid::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 200vh;
+}
+
+body.grid::before {
+  z-index: 10000;
+  width: 100%;
+  background: linear-gradient(180deg, transparent 9px, hsla(39, 34.9%, 50.6%, 0.5) 9px);
+  background-size: 1px 10px;
+}
+
+body.grid::after {
+  z-index: 1000;
+  width: 1460px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(
+      90deg, 
+      transparent 10px, 
+      rgba(121, 255, 0, 0.22) 10px,
+      rgba(121, 255, 0, 0.22) 122px, 
+      transparent 112px);
+  background-size: 122px 1px;
+}
+
+.container {
+    width: 1460px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.column {
+    float: left;
+    /*gutter-width: 20px; gutter-direction: after;*/
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.column.is-1 {width: 100px;}
+.column.is-2 {width: 220px;}
+.column.is-3 {width: 340px;}
+.column.is-4 {width: 460px;}
+.column.is-5 {width: 580px;}
+.column.is-6 {width: 700px;}
+.column.is-7 {width: 820px;}
+.column.is-8 {width: 940px;}
+.column.is-9 {width: 1060px;}
+.column.is-10 {width: 1180px;}
+.column.is-11 {width: 1300px;}
+.column.is-12 {width: 1420px;}
+
+.column.is-offset-1  { margin-left: 130px;  }
+.column.is-offset-2  { margin-left: 250px;  }
+.column.is-offset-3  { margin-left: 370px;  }
+.column.is-offset-4  { margin-left: 490px;  }
+.column.is-offset-5  { margin-left: 610px;  }
+.column.is-offset-6  { margin-left: 730px;  }
+.column.is-offset-7  { margin-left: 850px;  }
+.column.is-offset-8  { margin-left: 970px;  }
+.column.is-offset-9  { margin-left: 1090px;  }
+.column.is-offset-10 { margin-left: 1210px; }
+.column.is-offset-11 { margin-left: 1330px; }
+
+.column.last, .column.omega {margin-right: 0;}
+/*last = omega와 동일한 역할 둘 중 하나를 쓰면 됨
+ *after gutter를 쓸 경우 마지막에 항상 last 또는 omega를 써줘야함. before gutter 또한 first, alpha를 써줘야함 */
