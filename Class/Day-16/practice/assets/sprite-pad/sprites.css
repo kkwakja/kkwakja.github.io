@@ -1,0 +1,64 @@
+.sprite{
+	background: url(sprites.png) no-repeat;
+}
+
+.sprite.is-Behance{
+	background-position: -28px -29px ;
+	width: 26px;
+	height: 26px;
+}
+
+.clock{
+	background-position: -86px -6px ;
+	width: 17px;
+	height: 17px;
+}
+
+.Dribbble{
+	background-position: -28px 0;
+	width: 26px;
+	height: 26px;
+}
+
+.Facebook{
+	background-position: 0 0;
+	width: 26px;
+	height: 26px;
+}
+
+.gui-sprites{
+	background-position: -498px -54px ;
+	width: 0px;
+	height: 0px;
+}
+
+.Instagram{
+	background-position: -57px 0;
+	width: 26px;
+	height: 26px;
+}
+
+.MasterCard{
+	background-position: -56px -29px ;
+	width: 39px;
+	height: 23px;
+}
+
+.PayPal{
+	background-position: -3px -63px ;
+	width: 36px;
+	height: 10px;
+}
+
+.Twitter{
+	background-position: 0 -29px ;
+	width: 26px;
+	height: 26px;
+}
+
+.Visa{
+	background-position: -42px -61px ;
+	width: 39px;
+	height: 13px;
+}
+

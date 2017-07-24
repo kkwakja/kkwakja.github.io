@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: #aaa;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    /*flex-flow: row nowrap; 속기형*/
+    /*역순 row-reverse*/
+    flex-wrap: wrap;
+    width: 70%;
+    height: 450px;
+    background: #121212;
+    justify-content: space-around;
+    /*주축을 기준으로 하는 디자인 flex-start, center, space-around, space-between flex-end*/
+    /*align-item은 교차점을 기준으로 하는 디자인을 하게 됨 아이템 개별개별로 적용됨*/
+    /*align-content는 덩어리전체에 속성을 적용 */
+}
+
+.item {
+    width: 50px;
+    height: 50px;
+    /*height를 설정하지않으면 기본이 stretch로 설정됨*/
+    margin-right: 4px;
+    margin-bottom: 4px;
+    background: #fff;
+    font-size: 20px;
+    color: #434343;
+    /*text-align: center;
+    line-height: 90px; 옛날 방식*/
+}
+
+/*.item:nth-child(3n-1){
+    height: 180px;
+}*/
+
+.is-center {
+    display: flex; 
+    /*flexbox로 만들어줌*/
+    justify-content: center;
+    align-items: center;
+}

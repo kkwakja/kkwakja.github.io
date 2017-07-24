@@ -1,0 +1,181 @@
+body {
+    background: #fff;
+}
+
+body, figure {
+    margin: 0;
+}
+
+img, video {   
+    vertical-align: bottom;
+}
+/*이미지 아래에 생기는 공간을 삭제해줌 - 초기화 작업 */
+
+/* ------------------------- */
+/* 사용자 정의 디자인  */
+
+.hide {
+    display: none;
+} 
+.demo {
+    /* padding: 30px; */
+    max-width: 960px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.img-wrapper, .video-wrapper {
+    border: 5px solid #eee;
+}
+
+
+/*배경이미지 반응형 처리  */
+.green-leap {
+    background: url("https://unsplash.it/800/420/?image=18") no-repeat;
+    /* 420/800*100 */
+    /* 높이/너비 x 100% */
+    padding-top: 52.5%;
+}
+.add {
+    background: url("https://unsplash.it/916/623/?image=26") no-repeat;
+    padding-top: 68%;
+}
+
+
+.big-header {
+    height: 100vh;
+    background: #e0e0e0;
+}
+
+.scale-up{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s;
+}
+
+.big-header:hover .scale-up{
+    transform: scale(1.2) translate(-50%, -50%);
+}
+
+
+.big-header-title {
+    position: absolute;
+    z-index: 100;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 50px;
+    font-weight: 100;
+    color: #fff;
+}
+
+.cracker {
+    background: url("../images/breno-machado-17850.jpg")no-repeat center top;
+}
+
+.crop-img-wrapper {
+    overflow: hidden;
+    position: relative;
+    height: inherit;
+}
+
+.crop-img {
+    position: absolute;
+    left: 50%;
+    /* width: 100%;
+    height: auto; */
+    transform: translateX(-50%);
+}
+
+
+
+/* 이미지 스케일 업 모듈  */
+.scale-up{
+    display: inline-block;
+    width: 140px;
+    height: 200px;
+}
+
+.scale-up .scale-wrap {
+    position: relative;
+    overflow: hidden;
+    height: inherit;
+}
+
+.scale-up .scale-mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.scale-up .scale-img {
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.scale-up:hover .scale-img{
+    transform: scale(1.2);
+}
+
+.media-zone {
+    max-width: 700px;
+    min-height: 100vh;
+    margin-left: auto;
+    margin: auto;
+}
+
+/*유투브, 맵 모듈  */
+.media-zone {
+
+}
+
+.youtube .map{
+    position: relative;
+    width: 100%;
+    height: 0;
+    /* padding-top: 56.25%; */
+
+}
+
+.youtube.is-4x3, 
+.map.is-4x3{
+    padding-top: 75%;
+}
+
+.youtube.is-16x9
+.map.is-16x9{
+    padding-top: 56.25%;
+}
+
+.youtube.is-21x9
+.map.is-21x9{
+    padding-top: 42.857142857%;
+}
+
+.youtube iframe,
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* 반응형 웹 디자인 클래스 (모듈)  */
+.rwd-img, .rwd-video {
+    /* max-width: 800px; 재사용 모듈에는 이렇게 사이즈를 넣어주는것이 좋지않음 */
+    width :100%;
+    height: auto;
+}
+
+.rwd-bg {
+    width: 100%;
+    height: 0;
+    background-size: cover;
+}
